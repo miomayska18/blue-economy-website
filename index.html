@@ -3,18 +3,104 @@
 <html lang="en">
 
 <head>
-	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="index.css">
     <title>HOME</title>
 
     <style>
+	body{
+	font-family: 'Karla', sans-serif;
+	}
+	#welcome{
+	width: 600px;
 	
+	padding-top: 50px;
+	text-align: center;
+	font-size: 20px;
+	}
+	#welcome > h2{
+	font-size: 35px;
+	}
+	#everything{
+	background-color: #f0faff;
+	
+	}
+	
+	
+	.box {
+	display: inline-block;
+	height: 100px;
+	position: relative;
+	overflow: hidden;
+	width: 300px;
+	background-color: #def4ff;
+	padding-right: 50px;
+	padding-left: 50px;
+	
+	padding-top: 25px;
+	text-align: left;
+	}
+	.box .read-more { 
+	bottom: 0; 
+	left: 0;
+	width: 100%; 
+	text-align: center; 
+	margin: 0; 
+	padding: 40px 0; 
+	position: absolute;
+	background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgba(50,130,184,1));
+	}
+
+	.read-more a{
+	text-decoration: none;
+	background-color:#555555;;
+	padding: 5px;
+	color: white
+	}
+	.read-more a:hover{
+	text-decoration: none;
+	background-color:#555555;;
+	padding: 5px;
+	color: white
+	}
+	.read-more a:visited{
+	text-decoration: none;
+	background-color:#555555;;
+	padding: 5px;
+	color: white
+	}
+	.read-more a:active{
+	text-decoration: none;
+	background-color:#555555;;
+	padding: 5px;
+	color: white
+	}
+	#boxes{
+	padding-left: 60px;
+	padding-right: 60px; 
+	padding-bottom: 60px; 	
+	outile-style: solid; 
+	display: flex; 
+	justify-content: space-between;
+	}
+	#pictures{
+	padding-left: 60px;
+	padding-right: 60px; 
+	padding-top: 60px; 	
+	outile-style: solid; 
+	display: flex; 
+	justify-content: space-between
+	}
+	img{
+	height: 227px;
+	width: 400px;
+	}
     </style>
 </head>
 
 <body>
 
-<h1>WA RECYCLING</h1>
+<h1><a href="index.html">WA RECYCLING</a></h1>
 <header>
 
 <center><div id="nav">
@@ -28,13 +114,50 @@
 	
 </div>
 </center>
-
 </header>
 
-<p style="height: 600px;">
-helloooo
-</p>
+<div id="everything">
 
+<center>
+<article id="welcome">
+	<h2>Welcome</h2>
+	<br>
+	On this website you will learn how air and water are being recycled.
+	<br>
+	So where shall we begin?
+</article>
+
+<center>
+<div id="pictures">
+<img src="environment.jpg">
+<img src="water.jpg">
+<img src="air.jpg">
+</div>
+
+<div id="boxes" >
+<div class="box">
+	<h3>Environment</h3>
+  <p>malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempormalesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor</p>
+  <p class="read-more"><a href="#" class="button">Read More</a></p>
+</div>
+<div class="box">
+	<h3>Water</h3>
+  <p>malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempormalesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor</p>
+  <p class="read-more"><a href="#" class="button">Read More</a></p>
+</div>
+<div class="box">
+	<h3>Air</h3>
+  <p>malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempormalesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor</p>
+  <p class="read-more"><a href="#" class="button">Read More</a></p>
+</div>
+</div>
+
+
+</center>
+</center>
+
+
+</div>
 
 <footer>
 <div id="lownav">

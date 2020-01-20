@@ -2,6 +2,10 @@
     margin: 0;
 }
 
+body{
+	font-family: 'Karla', sans-serif;
+	}
+
 #line a {
     display: inline-block;
     text-decoration: none;
@@ -38,14 +42,19 @@ h1 {
     font-size: 50px;
     color: #3282b8;
 }
+h1 a{
+    
+    color: #3282b8;
+	text-decoration: none;
+}
 
 footer {
     background-color: #3282b8;
-    height: 150px;
+    height: 120px;
 }
 
 #lownav {
-    padding-top: 50px;
+    padding-top: 30px;
 }
 
 #footernav {
