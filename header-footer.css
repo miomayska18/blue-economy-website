@@ -48,6 +48,10 @@ h1 a{
 	text-decoration: none;
 }
 
+#everything{
+     background-color: #f0faff;
+}
+
 footer {
     background-color: #3282b8;
     height: 120px;
