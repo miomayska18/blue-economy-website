@@ -35,65 +35,60 @@
      width: 90%;
      padding-bottom: 60px;
      display: flex;
-     justify-content: space-between;
+     justify-content: center;
+	}
+	.box {
+     display: inline-block;
+     position: relative;
+     overflow: hidden;
+     background-color: #def4ff;
+     padding: 20px;
+     text-align: left;
+	 margin: 20px;
+	 width: 280px;
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+	.read-more-state {
+  display: none;
 }
 
-
-
-
-p.read-more-wrap{
-    text-align: justify;
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  max-width: inherit;
+  font-size: 0;
+  transition: .25s ease;
 }
+
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+  opacity: 1;
+  font-size: inherit;
+}
+
+.read-more-state ~ .read-more-trigger:before {
+  content: 'Show more';
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: 'Show less';
+}
+
 .read-more-trigger {
   cursor: pointer;
   display: inline-block;
   padding: 0 .5em;
-  color: #ffffff;
-  background-color: #3FA5F9;
+  color: #666;
   font-size: .9em;
   line-height: 2;
   border: 1px solid #ddd;
   border-radius: .25em;
-  margin-left: 10px;
-    margin-bottom: 10px;
 }
-.read-more-target {
-  opacity: 0;
-  max-height: 0;
-  font-size: 0;
-  transition: .25s ease;
-  
-}
- .box .read-more {
-     bottom: 0;
-     left: 0;
-     width: 100%;
-     text-align: center;
-     margin: 0;
-     padding: 40px 0;
-     position: absolute;
-     background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgba(50,130,184,1));
-}
-.read-more-state:checked ~ .read-more-wrap .read-more-target {
-  opacity: 1;
-  font-size: inherit;
-  max-height:999em;
-  
-}
-.hidden {
-    display: none;
-}
-
-
-.read-more-state ~ .read-more-trigger:before {
-  content: 'Покажи повече';
-}
-
-.read-more-state:checked ~ .read-more-trigger:before {
-  content: 'Покажи по-малко';
-}
-
-
 	</style>
 </head>
 
@@ -122,7 +117,8 @@ p.read-more-wrap{
 
 
 <div id="everything">
-<div class="content-big">
+
+	<div class="content-big">
             <center>
                 <h1 class="questions">Who are the authors of this site?</h1>
 			</center>
@@ -130,26 +126,63 @@ p.read-more-wrap{
               We are students studying in the "Vocational school of computer programming and inovations"
 			  Although we are in different classes, we have the same interests. Writing code.
             </p>
-</div>
-<br></br>
-<div id="boxes" >
+	</div>
 
-<div class="box">
-<input type="checkbox" class="read-more-state" id="post-1" />
-	<h3>Magdalena</h3>
-  <p class="read-more-wrap">neshto za Magi <span class="read-more-target"> dopulnitelna informaciq </p>
- <label for="post-1" class="read-more-trigger"></label>
+	<br>
 
-</div>
+<center>
+	<div id="boxes">
 
-<div class="box">
-<input type="checkbox" class="read-more-state" id="post-2" />
-	<h3>Ivan</h3>
-  <p class="read-more-wrap">neshto za Ivan <span class="read-more-target"> dopulnitelna informaciq </p>
-   <label for="post-2" class="read-more-trigger"></label>
+		<div class="box">
+			<img src="" style="height: 300px; width: 227px;">
+				<h3>Magdalena</h3>
+				<div>
+					<input type="checkbox" class="read-more-state" id="post-2" />
+
+						<p class="read-more-wrap">Nesho za magi. 
+						<span class="read-more-target">Libero fuga facilis vel 
+						consectetur quos sapiente deleniti eveniet dolores tempore 
+						eos deserunt officia quis ab? Excepturi vero tempore minus 
+						beatae voluptatem!</span></p>
+					
   
-</div>
-</div>
+					<label for="post-2" class="read-more-trigger"></label>
+				</div>
+
+		</div>
+
+		<div class="box">
+			<img src="" style="height: 300px; width: 227px;">
+			<h3>Ivan</h3>
+			<div>
+					<input type="checkbox" class="read-more-state" id="post-1" />
+
+						<p class="read-more-wrap">Nesho za ivan. 
+						<span class="read-more-target">Libero fuga facilis vel 
+						consectetur quos sapiente deleniti eveniet dolores tempore 
+						eos deserunt officia quis ab? Excepturi vero tempore minus 
+						beatae voluptatem!</span></p>
+					
+  
+					<label for="post-1" class="read-more-trigger"></label>
+				</div>
+		</div>
+		
+	</div>
+</center>
+
+<center>
+	<div class="content-big">
+            <center>
+                <h1 class="questions">Why are we doing this?</h1>
+			</center>
+            <p class="text">
+              We made this website because we care about the well-being of the environment and the world we live in.
+			  We think that it is improtant for people to be informed about things in their daily lives that cause pollution and how they can change their habits to become more eco-friendly.
+            </p>
+	</div>
+	
+	</center>
 </div>
 
 
